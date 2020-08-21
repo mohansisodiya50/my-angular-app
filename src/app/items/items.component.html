@@ -1,0 +1,34 @@
+<div class="container text-center">
+
+	<button mat-button (click)="openDialog('Add',{})" mat-flat-button color="primary">Add Row</button>
+  
+	<table mat-table [dataSource]="dataSource" #mytable class="my-table mat-elevation-z8">
+
+	  <ng-container matColumnDef="id">
+		<th mat-header-cell *matHeaderCellDef> Item Id </th>
+		<td mat-cell *matCellDef="let element"> {{element.id}} </td>
+	  </ng-container>
+  
+	  <ng-container matColumnDef="itemName">
+		<th mat-header-cell *matHeaderCellDef> Item Name </th>
+		<td mat-cell *matCellDef="let element"> {{element.itemName}} </td>
+	  </ng-container>
+
+	  <ng-container matColumnDef="itemQuantity">
+		<th mat-header-cell *matHeaderCellDef> Item Quantity </th>
+		<td mat-cell *matCellDef="let element"> {{element.itemQuantity}} </td>
+	  </ng-container>
+  
+	  <ng-container matColumnDef="action">
+		<th mat-header-cell *matHeaderCellDef> Action </th>
+		<td mat-cell *matCellDef="let element" class="action-link"> 
+		  <a (click)="openDialog('Update',element)">Edit</a> | 
+		  <a (click)="openDialog('Delete',element)">Delete</a>  
+		</td>
+	  </ng-container>
+  
+	  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+	  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+	</table>
+  
+  </div>

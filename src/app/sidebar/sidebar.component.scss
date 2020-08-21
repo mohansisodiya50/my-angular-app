@@ -1,0 +1,51 @@
+	.sidebar {
+		width: 250px;
+		position: fixed;
+		background-color: lightblue;
+		height: 100%;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		overflow-x: hidden;
+		padding-top: 20px;
+	}
+
+	a.active {
+		color: blue;
+	}
+
+	a {
+		margin: 10px;
+	}
+  
+  .sidebar a {
+	padding: 10px 8px 10px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+  }
+  
+  .sidebar {
+	a:hover {
+		color: #f1f1f1;
+	  }
+
+	  a.active {
+		color: blue;
+	  }
+  } 
+  
+  .main {
+	margin-left: 160px;
+	padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+  }
+
+  ul {
+	  list-style: none;
+  }

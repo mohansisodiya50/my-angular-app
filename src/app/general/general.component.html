@@ -1,0 +1,57 @@
+<form class="formwidth" (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <table class="fullwidth">
+        <tr>
+            <td>
+                <mat-form-field>
+                    <input matInput placeholder="Shp Owner" id="shopOwner" [(ngModel)]="address.shopOwner" name="shopOwner">
+                </mat-form-field>
+            </td>
+            <td>
+                <!-- <mat-form-field> -->
+					<mat-slide-toggle>Status</mat-slide-toggle>
+                    <!-- <input matInput placeholder="Status" id="status" [(ngModel)]="address.status" name="status"> -->
+                <!-- </mat-form-field> -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Shop Name" id="shopName" [(ngModel)]="address.shopName" name="shopName">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Country" id="country" [(ngModel)]="address.country" name="country">
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Ease URL" id="easeUrl" [(ngModel)]="address.easeUrl" name="easeUrl">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Currency" id="currency" [(ngModel)]="address.currency" name="currency">
+                </mat-form-field>
+            </td>
+        </tr>
+
+    </table>
+    <table class="fullwidth" cellspacing="0">
+        <tr>
+			<td>
+				<mat-form-field class="fullwidth">
+					<input matInput placeholder="Long Name" id="longName" [(ngModel)]="address.longName" name="longName">
+				</mat-form-field>
+			<td>
+    </table>
+    <p>
+        <button type="submit" md-raised-button>Submit</button>
+    </p>
+</form>
+<!-- <mat-toolbar color="primary">
+	<span class="fill-remaining-space">My Reactive Form with Material</span>
+</mat-toolbar> -->
+
