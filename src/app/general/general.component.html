@@ -7,10 +7,10 @@
                 </mat-form-field>
             </td>
             <td>
-                <!-- <mat-form-field> -->
-					<mat-slide-toggle>Status</mat-slide-toggle>
-                    <!-- <input matInput placeholder="Status" id="status" [(ngModel)]="address.status" name="status"> -->
-                <!-- </mat-form-field> -->
+				<mat-form-field>
+					<mat-slide-toggle [(ngModel)]="address.status" name='status'></mat-slide-toggle>
+					<input matInput hidden />
+				</mat-form-field>
             </td>
         </tr>
         <tr>
