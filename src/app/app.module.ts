@@ -11,6 +11,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatIconModule} from '@angular/material/icon';
+import {HttpClientModule } from '@angular/common/http';
+
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
@@ -46,7 +49,9 @@ import { CustomersDialogBoxComponent } from './customers/customers-dialog-box.co
 	MatInputModule,
 	MatSidenavModule,
 	ReactiveFormsModule,
-	MatSlideToggleModule
+	MatSlideToggleModule,
+	MatIconModule,
+	HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

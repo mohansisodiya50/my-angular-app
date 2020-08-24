@@ -2,3 +2,29 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-table {
+	width: 100%;
+
+	td {
+		a {
+			cursor: pointer;
+		}
+	}
+}
+
+
+button.mat-focus-indicator.mat-button.mat-flat-button.mat-button-base.mat-primary {
+	margin: 10px 0;
+}
+
+.wrapper {
+	width: 60% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+	.wrapper {
+		width: 90% !important;
+		margin: 0 10px;
+	}
+}

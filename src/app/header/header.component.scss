@@ -1,9 +1,19 @@
 .header {
-	height: 50px;
-    background-color: #1C5792;
+	box-sizing: border-box;
+	display: flex;
+	margin: 0;
+	vertical-align: middle;
+    background-color: white;
+    border: 5px solid black;
+    box-sizing: content-box;
+    color: black;
+    padding: 0;
+    text-align: start;
+    top: 0;
     width: 100%;
-    position: fixed;
-	color: white;
-	text-align: center;
-	top: 0;
+	
+		h1 {
+			margin: 10px;
+		}
 }
+

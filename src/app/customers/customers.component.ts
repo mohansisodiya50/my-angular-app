@@ -32,7 +32,7 @@ const ELEMENT_DATA: UsersData[] = [
 @Component({
   selector: 'app-deals',
   templateUrl: './customers.component.html',
-  styleUrls: ['./customers.component.scss']
+  styleUrls: []
 })
 export class CustomersComponent {
   displayedColumns: string[] = ['id', 'firstName', 'lastName', 'contactNumber', 'emailId', 'action'];

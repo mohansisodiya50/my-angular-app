@@ -26,7 +26,7 @@ const ELEMENT_DATA: UsersData[] = [
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
-  styleUrls: ['./items.component.scss']
+  styleUrls: []
 })
 export class ItemsComponent {
   displayedColumns: string[] = ['id', 'itemName', 'itemQuantity', 'action'];
